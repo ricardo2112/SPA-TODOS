@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: "nuevaFuente";
+    src: url(../font/Romanesco-Regular.ttf);
+}
+* {
+    border: 1px solid #FF0000;
+}*/
+
+body {
+    margin: 0;
+}
+
+#menu-spa {
+    background-color: #A3A656;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px; /* Espaciado de 70px desde el borde izquierdo */
+}
+
+
+#menu-spa ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-spa li {
+    display: inline-block;
+    margin-right: 30px; /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+#menu-spa a {
+    text-decoration: none;
+    color: #000; /* Color del texto */
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+}
+
+#spa-todos{
+    background-image: url("../images/main.png");
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    padding-left: 20px;
+}
+
+.text-spa{
+    margin-left: 200px; 
+    width: 600px;
+    margin-top: 90px;
+}
+
+.text-spa h1{
+    color: #000;
+    font-family: nuevaFuente;
+    height: 96px;
+    font-weight: 400; /* SemiBold */
+    font-size: 96px;
+}
+
+.text-spa h2 {
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+    width: 600px;
+    color: #000; /* Color del texto, ajusta según sea necesario */
+}
+
+.reserva-codigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F6F6;
+    height: 100px;
+    padding: 10px 20px; /* Ajustado para agregar espacio en los bordes */
+    box-sizing: border-box;
+}
+
+#reserva {
+    margin-right: 30px; /* Espaciado entre el campo de reserva y el label de código */
+}
+
+label {
+    margin-right: 10px; /* Espaciado entre el texto y el campo de entrada */
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    background-color: white; /* Fondo blanco */
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #000; /* Color del texto del campo de entrada */
+}
+
+/* Estilo del placeholder */
+input::placeholder {
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #9E9A9A; /* Color del placeholder */
+}
+
+#servicios{
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+
+#servicios h1{
+    margin: 0px;
+    padding: 30px 0px
+}
+
+#servicios article{
+    width: 33%;
+    display: inline-block;
+}
+
+#servicios article ul{
+    text-align: left;
+    list-style-type: none;
+    padding: 0px;
+}
