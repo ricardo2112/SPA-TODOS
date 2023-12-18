@@ -1,18 +1,16 @@
 
 @font-face {
     font-family: "nuevaFuente";
-    src: url(../font/Romanesco-Regular.ttf);
+    src: url(/font/Romanesco-Regular.ttf);
 }
 
-* {
-    border: 1px solid #FF0000;
-}*/
+
 
 body {
     margin: 0;
 }
 
-#menu-spa {
+.menu-spa {
     background-color: #A3A656;
     height: 70px;
     display: flex;
@@ -20,28 +18,68 @@ body {
     padding-left: 70px; /* Espaciado de 70px desde el borde izquierdo */
 }
 
+.menu-spa ul li a:hover{
+    color: #FFFF00;
+}
 
-#menu-spa ul {
+.menu-spa ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#menu-spa li {
+.menu-spa li {
     display: inline-block;
     margin-right: 30px; /* Ajusta el espacio entre los elementos según sea necesario */
 }
 
-#menu-spa a {
+.menu-spa a {
     text-decoration: none;
     color: #000; /* Color del texto */
     font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
     font-weight: 400; /* Regular */
     font-size: 16px;
 }
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60rem;
+
+}
+
+.usuario .arrow{
+    cursor: pointer;
+
+}
+
+.usuario .usuarioimg{
+    transform: scale(0.9);
+}
+
+.usuario .bandera{
+    padding: 1rem;
+}
+
+
+.usuario p{
+    padding: 0 .5rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+
+}
+.usuario p:hover{
+    color: FFFF00;
+}
+
+
+.usuario .micuenta{
+margin-right: 2.5rem;
+}
+
 
 #spa-todos{
-    background-image: url("../images/main.png");
+    background-image: url("/images/main.png");
     background-size: cover;
     background-position: center;
     height: 780px;
@@ -186,56 +224,155 @@ input::placeholder {
     text-align: center;
 }
 
-#socios {
+.beneficios{
+    background: #F2F6F6;
+    margin-top: 40px;
+    padding-top: 8px;
     height: 770px;
-    background-color: #F2F6F6;
+    justify-content: center;
+    align-items: center;
+}
+.beneficios h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+}
+
+.contenedorBeneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Ajusta este valor según tu preferencia */
+    width: 100%;
+    margin-top: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedorBeneficios article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #000;
-    padding-top: 10px; /* Espacio de 100px desde el inicio de la section hasta el inicio de los articles */
+    align-self: start; 
 }
 
-#socios h4{
-    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
-    font-weight: 600; /* SemiBold */
-    font-size: 32px;
-    color: #000;
-}
-
-#socios article {
-    width: 300px;
-    display: inline-block;
-    margin-left: 134px; /* Distancia de 134px entre cada artículo */
-    margin-bottom: 60px;
-}
-
-
-.bt-condiciones {
-    
-    color: #ff0000; 
-    font-weight: bold;
-
-}
-
-#socios article h1{
-    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
-    font-weight: 600; /* SemiBold */
-    font-size: 32px;
-    color: #000;
-}
-
-#socios article ul li{
-    text-align: left;
-    margin-left: 50px;
-    padding: 0;
-}
-
-#socios article img {
-    background-color: #FFF;
-    width: 233px;
-    height: 233px;
+.contenedorBeneficios .imagenRedonda{
+    width: 255px;
+    height: 255px;
+    border: 10px solid #384001;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 11px;
-    border-color: #384001;
-    object-fit: cover; /* Evitar que la imagen se expanda y distorsione */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorBeneficios .imagenRedonda img {
+    max-width: 233px;
+    max-height: 233px;
+    object-fit: contain;
+    margin: 11px;
+}
+
+.contenedorBeneficios h3{
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding-top: .5rem;
+}
+
+.contenedorBeneficios button{
+    height: 4rem;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    background-color: #A3A656;;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+
+
+.contenedorBeneficios button:hover{
+    background-color: #384001;
+}
+
+.contenedorBeneficios li{
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    padding-top: 0.4rem;
+    text-align: justify;
+}
+
+.contenedorFooter{
+    display: flex;
+    background-color: #384001;
+    justify-content: space-between;
+    width: 100%;
+    height: 97px;
+}
+
+.contenedorFooter nav{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.contenedorFooter nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #A3A656;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.contenedorFooter nav a:hover{
+    color: #FFFF00;
+}
+
+.contenedorFooter .redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.contenedorFooter .redes p{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color:  #A3A656;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 26%;
+    width: auto;
+}
+
+.contenedorFooter .redes .imagenesRedes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
 }
