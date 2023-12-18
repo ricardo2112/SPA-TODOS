@@ -3,6 +3,7 @@
     font-family: "nuevaFuente";
     src: url(../font/Romanesco-Regular.ttf);
 }
+
 * {
     border: 1px solid #FF0000;
 }*/
@@ -113,24 +114,128 @@ input::placeholder {
     color: #9E9A9A; /* Color del placeholder */
 }
 
-#servicios{
+#servicios {
     background-color: #fff;
     text-align: center;
     color: #000;
+    padding-top: 100px; /* Espacio de 100px desde el inicio de la section hasta el inicio de los articles */
 }
 
-#servicios h1{
+#servicios h1 {
+    margin: 0;
+    padding: 20px; /* Ajustar el tamaño del padding según lo deseado */
+    background-color: #A3A656; /* Color de fondo para el título h1 */
+    color: #fff; /* Color del texto del título */
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+    height: 40px;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#servicios article {
+    width: 350px;
+    display: inline-block;
+    margin-left: 134px; /* Distancia de 134px entre cada artículo */
+    margin-bottom: 60px;
+}
+
+#servicios article ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+#servicios article ul li {
+    text-decoration: none;
     margin: 0px;
-    padding: 30px 0px
-}
-
-#servicios article{
-    width: 33%;
+    color: #000; /* Color del texto */
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 400; /* Regular */
+    font-size: 16px;
     display: inline-block;
 }
 
-#servicios article ul{
+/* Estilos para h2 y h3 dentro del contenedor */
+.inline-container {
+    width: 340px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-container h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.inline-container h3 {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    background-color: #A3A656;
+    color: #fff;
+    padding: 13px;
+    border-radius: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 130px;
+    height: 18px;
+    text-align: center;
+}
+
+#socios {
+    height: 770px;
+    background-color: #F2F6F6;
+    text-align: center;
+    color: #000;
+    padding-top: 10px; /* Espacio de 100px desde el inicio de la section hasta el inicio de los articles */
+}
+
+#socios h4{
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+    color: #000;
+}
+
+#socios article {
+    width: 300px;
+    display: inline-block;
+    margin-left: 134px; /* Distancia de 134px entre cada artículo */
+    margin-bottom: 60px;
+}
+
+
+.bt-condiciones {
+    
+    color: #ff0000; 
+    font-weight: bold;
+
+}
+
+#socios article h1{
+    font-family: 'Inter', sans-serif; /* Utiliza la fuente Inter o la que prefieras */
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+    color: #000;
+}
+
+#socios article ul li{
     text-align: left;
-    list-style-type: none;
-    padding: 0px;
+    margin-left: 50px;
+    padding: 0;
+}
+
+#socios article img {
+    background-color: #FFF;
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 11px;
+    border-color: #384001;
+    object-fit: cover; /* Evitar que la imagen se expanda y distorsione */
 }
