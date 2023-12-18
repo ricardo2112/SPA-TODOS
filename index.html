@@ -9,7 +9,7 @@
 <body>
     <header>
         <!-- Logo -->
-        <section id="menu-spa">
+        <section class="menu-spa">
             <ul>
                 <li><a href="">PROMOCIONES</a></li>
                 <li><a href="">FOTOS</a></li>
@@ -17,6 +17,13 @@
                 <li><a href="">MAPA</a></li>
                 <li><a href="">CONTACTO</a></li>
             </ul>
+            <div class="usuario">
+                <img class="usuarioimg" src="/images/user.png" alt="usuario">
+                <p class="micuenta">Mi cuenta</p>
+                <p>ES</p>
+                <img class="bandera" src="/images/flag.png" alt="idioma">
+                <img class="arrow" src="/images/arrow.png" alt="buscar">
+            </div>
         </section>
       </header>
       <main>
@@ -73,52 +80,64 @@
                 </div>
             </article>            
         </section>
-        <section id="socios">
-            <H4>Haste socio y prueba nuestros beneficios</H4>
-            <article>
-                <img src="images/gold.png" alt="Este es el proyecto1">
-                <h1>GOLD</h1>
-                <div>
+        <section class="beneficios">
+            <h1>Haste socio y prueba nuestros beneficios</h1>
+            <div class="contenedorBeneficios">
+                <article>
+                    <div class="imagenRedonda">
+                        <img  src="/images/gold.png" alt="gold">
+                    </div>
+                    <h3>GOLD</h3>
+                    <button>Ver Condiciones</button>
                     <ul>
-                        <div class="condiciones">
-                            <h2 class="bt-condiciones">VER CONDICIONES</h3>
-                        </div>
                         <li>Gimnasio</li>
                         <li>Piscina</li>
                         <li>Todos los tratamientos</li>
                     </ul>
-                </div>
-            </article>
-            <article>
-                <img src="images/premium.png" alt="Este es el proyecto1">
-                <h1>PREMIUM</h1>
-                <div>
+                </article>
+                <article>
+                    <div class="imagenRedonda">
+                        <img  src="/images/premium.png" alt="premium">
+                    </div>
+                    <h3>PREMIUM</h3>
+                    <button>Ver Condiciones</button>
                     <ul>
-                        <div class="condiciones">
-                            <h2 class="bt-condiciones">VER CONDICIONES</h3>
-                        </div>
                         <li>Gimnasio</li>
                         <li>Todos los tratamientos</li>
-                   </ul>
-                </div>
-            </article>
-            <article>
-                <img src="images/plate.png" alt="Este es el proyecto1">
-                <h1>PLATE</h1>
-                <div>
-                    <ul>
-                        <div class="condiciones">
-                            <h2 class="bt-condiciones">VER CONDICIONES</h3>
-                        </div>
-                        <li>Tratamientos faciales</li>
                     </ul>
-                </div>
-            </article>            
+                </article>
+                <article>
+                    <div class="imagenRedonda" >
+                        <img src="/images/plate.png" alt="plate">
+                    </div>
+                    <h3>PLATE</h3>
+                    <button>Ver Condiciones</button>
+                    <ul>
+                        <li>Tratamiento facial</li>
+                    </ul>
+                </article>
+            </div>
         </section>
-
-
-
-
     </main>
+    <footer>
+        <section class="contenedorFooter">
+            <nav>
+                <a href="#">Politicas de Cookies</a>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Proteccion de Datos</a>
+                <a href="#">Mapa del Sitio</a>
+            </nav>
+            <div class="redes">
+                <p>Siguenos en:</p>
+                <div class="imagenesRedes">
+                    <img src="/images/rs_facebook.png" alt="facebook">
+                    <img src="/images/rs_twiter.png" alt="twitter">
+                    <img src="/images/rs_youtube.png" alt="youtube">
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    
 </body>
 </html>
